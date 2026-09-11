@@ -1,0 +1,121 @@
+{
+  "kind": "idiom",
+  "series": "NEWS WORD",
+  "number": "#002",
+  "id": "NEWS_WORD_002",
+  "date": "2026-09-11",
+  "cover_photo": "",
+  "cta_ko": "다음 외신에서 다시 만나게 됩니다.",
+  "collection": [
+    "#001 AI slop",
+    "#002 hang in the balance",
+    "#003 lo-fi",
+    "#004 square off",
+    "#005 call the shots",
+    "#006 flip-flop",
+    "#007 squash",
+    "#008 defy the odds",
+    "#009 drop the hammer"
+  ],
+  "hashtags": [
+    "#외신영어",
+    "#헤드라인영어",
+    "#뉴스영어",
+    "#영어표현",
+    "#편입영어",
+    "#영어이디엄",
+    "#영어공부",
+    "#뉴스로영어",
+    "#시사영어",
+    "#hanginthebalance"
+  ],
+  "expression": "hang in the balance",
+  "pos": "verb phrase",
+  "type": "idiom",
+  "emoji": "⚖️",
+  "ipa": "[hæŋ ɪn ðə ˈbæləns]",
+  "pron_kr": "행 인 더 밸런스",
+  "formula": "hang(매달리다) + in the balance(저울 위에)",
+  "literal_ko": "저울에 매달려 있다",
+  "meaning_ko": "결과가 어느 쪽으로 갈지 정해지지 않은 채 걸려 있다",
+  "nuance_ko": "아직 안 정해졌는데, 그 결과가 아주 중대할 때만 씁니다. 사소한 일에는 안 씁니다.",
+  "origin_ko": "옛 천칭 저울에서 온 표현입니다. 추가 어느 쪽으로 기울지 모르는 순간, 그 위에 운명이 걸려 있다는 그림이죠.",
+  "headline": "Israel's future hangs in the balance",
+  "headline_lead": "Israel's future",
+  "headline_tail": "",
+  "source": "THE ECONOMIST",
+  "section": "BRIEFING",
+  "news_summary_ko": "이스라엘이 어느 방향으로 갈지 갈림길에 섰다는 이코노미스트 브리핑. 정치·안보·사회 세 축이 동시에 흔들리고 있다는 진단입니다.",
+  "chain": [
+    "세 축이 동시에 흔들림",
+    "결과 미정 · 판돈은 큼",
+    "HANGS IN THE BALANCE"
+  ],
+  "metaphor_ko": "어느 쪽으로 기울지 모르는 저울",
+  "remember_ko": "기울기 직전의 저울 ⚖️",
+  "common_subjects": [
+    "the future",
+    "the fate of",
+    "the deal"
+  ],
+  "example_work_en": "The whole contract hangs in the balance until Friday.",
+  "example_work_ko": "금요일까지 계약 전체가 결정 안 난 채 걸려 있어요.",
+  "example_daily_en": "My weekend hangs in the balance — it depends on the weather.",
+  "example_daily_ko": "내 주말은 아직 미정이야. 날씨에 달렸어.",
+  "bridge_news": "The peace deal hangs in the balance.",
+  "bridge_conversation": "Everything's hanging in the balance right now.",
+  "bridge_exam": "be at stake / remain undecided",
+  "exam_line": "편입 독해에서는 at stake, undecided, uncertain으로 환언되어 나옵니다.",
+  "exam_source": "편입 독해 지문 환언 · 텝스 어휘",
+  "synonym": "at stake",
+  "antonym": "settled",
+  "hook_ko": "이스라엘의 미래가 '저울에 매달렸다'?",
+  "hook_hl": "'저울에 매달렸다'",
+  "quiz_ko": "그 계약의 운명은 아직 결정되지 않았어.",
+  "quiz_en_blank": "The deal still ________.",
+  "quiz_options": [
+    "hangs in the balance",
+    "sits on the fence",
+    "is off the table",
+    "is out of the woods"
+  ],
+  "quiz_answer": "A",
+  "distractor_meanings": [
+    {
+      "expr": "on the fence",
+      "ko": "(사람이) 결정을 못 내린, 중립인",
+      "en": "She's still on the fence about the offer."
+    },
+    {
+      "expr": "off the table",
+      "ko": "논의 대상에서 빠진",
+      "en": "A pay cut is off the table."
+    },
+    {
+      "expr": "out of the woods",
+      "ko": "위기를 벗어난",
+      "en": "The patient isn't out of the woods yet."
+    }
+  ],
+  "tags": [
+    "at stake",
+    "undecided",
+    "the fate of",
+    "balance"
+  ],
+  "visual_metaphor": "old brass balance scale tipping",
+  "photo_keywords": [
+    "balance scale",
+    "tipping scale",
+    "brass scale"
+  ],
+  "alt": {
+    "1": "이코노미스트 헤드라인 Israel's future hangs in the balance. 표현 강조. 훅: 저울에 매달렸다?",
+    "2": "기사 맥락 3단 체인",
+    "3": "표현 해설. 뜻·뉘앙스·유래·주어",
+    "4": "예문 2개와 브리지",
+    "5": "퀴즈 4지선다",
+    "6": "저장용 요약표",
+    "7": "오답 이디엄 3개 정리"
+  }
+}

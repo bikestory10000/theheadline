@@ -1,0 +1,121 @@
+{
+  "kind": "idiom",
+  "series": "NEWS WORD",
+  "number": "#004",
+  "id": "NEWS_WORD_004",
+  "date": "2026-09-11",
+  "cover_photo": "",
+  "cta_ko": "다음 외신에서 다시 만나게 됩니다.",
+  "collection": [
+    "#001 AI slop",
+    "#002 hang in the balance",
+    "#003 lo-fi",
+    "#004 square off",
+    "#005 call the shots",
+    "#006 flip-flop",
+    "#007 squash",
+    "#008 defy the odds",
+    "#009 drop the hammer"
+  ],
+  "hashtags": [
+    "#외신영어",
+    "#헤드라인영어",
+    "#뉴스영어",
+    "#영어표현",
+    "#편입영어",
+    "#영어이디엄",
+    "#영어공부",
+    "#뉴스로영어",
+    "#시사영어",
+    "#squareoff"
+  ],
+  "expression": "square off",
+  "pos": "phrasal verb",
+  "type": "idiom",
+  "emoji": "🤼",
+  "ipa": "[skwer ɔːf]",
+  "pron_kr": "스퀘어 오프",
+  "formula": "square(자세를 정면으로 잡다) + off",
+  "literal_ko": "네모를 만들다",
+  "meaning_ko": "맞붙을 자세를 잡다, 정면으로 대결하다",
+  "nuance_ko": "아직 싸움 전, 마주 서서 노려보는 순간까지 포함합니다. 스포츠·선거·기업 경쟁에 두루 씁니다.",
+  "origin_ko": "복싱에서 두 선수가 어깨를 정면(square)으로 맞추고 자세를 잡는 데서 온 표현으로 알려져 있습니다.",
+  "headline": "Superstar Strikers Square Off in England-Norway World Cup Quarterfinal",
+  "headline_lead": "Superstar Strikers",
+  "headline_tail": "",
+  "source": "NYT · THE ATHLETIC",
+  "section": "SPORT",
+  "news_summary_ko": "월드컵 8강 잉글랜드-노르웨이전. 대회 최다 득점 경쟁을 벌이는 홀란과 케인, 두 스트라이커의 정면 대결로 기사가 짜였습니다.",
+  "chain": [
+    "8강 · 잉글랜드 vs 노르웨이",
+    "홀란 vs 케인 정면 대결",
+    "SQUARE OFF"
+  ],
+  "metaphor_ko": "링 위에서 마주 선 두 복서",
+  "remember_ko": "마주 선 두 복서 🤼",
+  "common_subjects": [
+    "rivals",
+    "candidates",
+    "two companies"
+  ],
+  "example_work_en": "The two teams will square off over the budget next week.",
+  "example_work_ko": "다음 주 두 팀이 예산을 두고 맞붙어요.",
+  "example_daily_en": "My brother and I squared off over the last slice.",
+  "example_daily_ko": "마지막 한 조각 두고 동생이랑 정면 승부했어.",
+  "bridge_news": "Two rivals square off in the final.",
+  "bridge_conversation": "Ready to square off?",
+  "bridge_exam": "confront / compete against",
+  "exam_line": "편입 어휘에서는 confront, contend with, vie로 환언되어 나옵니다.",
+  "exam_source": "편입 어휘 환언 · 토익 Part 5",
+  "synonym": "face off",
+  "antonym": "team up",
+  "hook_ko": "슈퍼스타들이 '네모를 만든다'?",
+  "hook_hl": "'네모를 만든다'",
+  "quiz_ko": "두 회사가 시장을 두고 정면으로 맞붙는다.",
+  "quiz_en_blank": "The two companies will ________ over the market.",
+  "quiz_options": [
+    "square off",
+    "kick off",
+    "call off",
+    "sign off"
+  ],
+  "quiz_answer": "A",
+  "distractor_meanings": [
+    {
+      "expr": "kick off",
+      "ko": "시작하다",
+      "en": "The festival kicks off on Friday."
+    },
+    {
+      "expr": "call off",
+      "ko": "취소하다",
+      "en": "They called off the match."
+    },
+    {
+      "expr": "sign off",
+      "ko": "승인하다, 마무리하다",
+      "en": "The CEO signed off on the plan."
+    }
+  ],
+  "tags": [
+    "face off",
+    "confront",
+    "rivals",
+    "showdown"
+  ],
+  "visual_metaphor": "two boxers facing each other in a ring",
+  "photo_keywords": [
+    "boxers face off",
+    "boxing ring stare",
+    "two fighters"
+  ],
+  "alt": {
+    "1": "NYT 스포츠 헤드라인 Superstar Strikers Square Off. 훅: 네모를 만든다?",
+    "2": "기사 맥락 3단 체인",
+    "3": "표현 해설",
+    "4": "예문과 브리지",
+    "5": "퀴즈",
+    "6": "저장용 요약표",
+    "7": "오답 구동사 3개"
+  }
+}

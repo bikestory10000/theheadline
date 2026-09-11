@@ -1,0 +1,121 @@
+{
+  "kind": "idiom",
+  "series": "NEWS WORD",
+  "number": "#009",
+  "id": "NEWS_WORD_009",
+  "date": "2026-09-12",
+  "expression": "drop the hammer",
+  "pos": "verb phrase",
+  "type": "idiom",
+  "emoji": "🔨",
+  "ipa": "[drɑːp ðə ˈhæmər]",
+  "pron_kr": "드랍 더 해머",
+  "formula": "drop(내리치다) + the hammer(망치)",
+  "literal_ko": "망치를 떨어뜨리다",
+  "meaning_ko": "가차 없이 강한 처벌을 내리다",
+  "nuance_ko": "경고가 아니라 이미 내려진 철퇴입니다. 봐주지 않았다는 어조라, 징계·제재 기사에 붙습니다.",
+  "origin_ko": "판사의 의사봉이 내려오는 순간에서 온 표현으로 알려져 있습니다. 그 소리가 곧 판결이죠.",
+  "headline": "The N.B.A. Drops the Hammer on the Clippers",
+  "headline_lead": "The N.B.A.",
+  "headline_tail": "on the Clippers",
+  "source": "NYT",
+  "section": "SPORT",
+  "news_summary_ko": "NBA가 클리퍼스에 중징계를 내렸다는 소식. 경고 수준이 아니라 실제 제재가 떨어졌다는 점이 기사의 핵심입니다.",
+  "chain": [
+    "규정 위반 조사",
+    "경고 아닌 실제 제재",
+    "DROPS THE HAMMER"
+  ],
+  "metaphor_ko": "내리쳐진 판사의 의사봉",
+  "remember_ko": "내리친 의사봉 🔨",
+  "common_subjects": [
+    "regulators drop the hammer",
+    "the league dropped",
+    "the court dropped"
+  ],
+  "example_work_en": "Compliance dropped the hammer on the whole team.",
+  "example_work_ko": "준법팀이 팀 전체에 철퇴를 내렸어요.",
+  "example_daily_en": "My landlord finally dropped the hammer about the noise.",
+  "example_daily_ko": "집주인이 소음 문제로 결국 강하게 나왔어.",
+  "bridge_news": "Regulators dropped the hammer on the bank.",
+  "bridge_conversation": "They dropped the hammer on him.",
+  "bridge_exam": "impose a harsh penalty",
+  "exam_line": "편입 어휘에서는 impose sanctions, penalize, crack down on으로 환언됩니다.",
+  "exam_source": "편입 어휘 환언 · 텝스 어휘",
+  "synonym": "crack down",
+  "antonym": "let off",
+  "hook_ko": "NBA가 '망치를 떨어뜨렸다'?",
+  "hook_hl": "'망치를 떨어뜨렸다'",
+  "quiz_ko": "당국이 그 은행에 철퇴를 내렸다.",
+  "quiz_en_blank": "Regulators ________ on the bank.",
+  "quiz_options": [
+    "dropped the hammer",
+    "dropped the ball",
+    "passed the buck",
+    "threw in the towel"
+  ],
+  "quiz_answer": "A",
+  "distractor_meanings": [
+    {
+      "expr": "drop the ball",
+      "ko": "실수로 일을 그르치다",
+      "en": "We dropped the ball on that deadline."
+    },
+    {
+      "expr": "pass the buck",
+      "ko": "책임을 남에게 떠넘기다",
+      "en": "Stop passing the buck."
+    },
+    {
+      "expr": "throw in the towel",
+      "ko": "포기하다",
+      "en": "The firm threw in the towel after years of losses."
+    }
+  ],
+  "cta_ko": "다음 외신에서 다시 만나게 됩니다.",
+  "collection": [
+    "#001 AI slop",
+    "#002 hang in the balance",
+    "#003 lo-fi",
+    "#004 square off",
+    "#005 call the shots",
+    "#006 flip-flop",
+    "#007 squash",
+    "#008 defy the odds",
+    "#009 drop the hammer"
+  ],
+  "tags": [
+    "crack down",
+    "penalty",
+    "sanctions",
+    "gavel"
+  ],
+  "visual_metaphor": "judge gavel striking the block",
+  "photo_keywords": [
+    "judge gavel",
+    "gavel strike",
+    "courtroom gavel"
+  ],
+  "cover_photo": "",
+  "hashtags": [
+    "#외신영어",
+    "#헤드라인영어",
+    "#뉴스영어",
+    "#영어표현",
+    "#편입영어",
+    "#영어이디엄",
+    "#영어공부",
+    "#뉴스로영어",
+    "#시사영어",
+    "#dropthehammer"
+  ],
+  "alt": {
+    "1": "NYT 헤드라인 The N.B.A. Drops the Hammer on the Clippers. 훅: 망치를 떨어뜨렸다?",
+    "2": "기사 맥락 3단 체인",
+    "3": "표현 해설",
+    "4": "예문과 브리지",
+    "5": "퀴즈",
+    "6": "저장용 요약표",
+    "7": "오답 이디엄 3개"
+  }
+}

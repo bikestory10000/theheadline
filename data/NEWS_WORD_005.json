@@ -1,0 +1,121 @@
+{
+  "kind": "idiom",
+  "series": "NEWS WORD",
+  "number": "#005",
+  "id": "NEWS_WORD_005",
+  "date": "2026-09-11",
+  "cover_photo": "",
+  "cta_ko": "다음 외신에서 다시 만나게 됩니다.",
+  "collection": [
+    "#001 AI slop",
+    "#002 hang in the balance",
+    "#003 lo-fi",
+    "#004 square off",
+    "#005 call the shots",
+    "#006 flip-flop",
+    "#007 squash",
+    "#008 defy the odds",
+    "#009 drop the hammer"
+  ],
+  "hashtags": [
+    "#외신영어",
+    "#헤드라인영어",
+    "#뉴스영어",
+    "#영어표현",
+    "#편입영어",
+    "#영어이디엄",
+    "#영어공부",
+    "#뉴스로영어",
+    "#시사영어",
+    "#calltheshots"
+  ],
+  "expression": "call the shots",
+  "pos": "verb phrase",
+  "type": "idiom",
+  "emoji": "🎯",
+  "ipa": "[kɔːl ðə ʃɑːts]",
+  "pron_kr": "콜 더 샷츠",
+  "formula": "call(선언하다) + the shots(샷)",
+  "literal_ko": "총을 부르다",
+  "meaning_ko": "결정권을 쥐다, 지시를 내리는 위치에 있다",
+  "nuance_ko": "공식 직함과 무관하게 실제로 결정하는 사람을 가리킵니다. 그래서 '누가 진짜 결정권자냐'는 질문에 딱 맞습니다.",
+  "origin_ko": "어느 샷을 칠지 미리 선언하는 당구·사격 관행에서 왔다고 알려져 있습니다. 샷을 부르는 사람이 판을 쥔 사람이죠.",
+  "headline": "As US-Canada tensions flare, who's calling the shots in Trump's trade team?",
+  "headline_lead": "who's calling the shots",
+  "headline_tail": "",
+  "source": "THE GUARDIAN",
+  "section": "US",
+  "news_summary_ko": "미국-캐나다 무역 갈등이 커지는 가운데, 트럼프 무역팀의 실제 결정권자가 누구인지 짚은 기사. 무역대표 그리어 외에 러트닉 상무장관, 나바로 보좌관이 거론됩니다.",
+  "chain": [
+    "미-캐나다 무역 갈등 ↑",
+    "공식 직함 ≠ 실제 결정권",
+    "CALLING THE SHOTS"
+  ],
+  "metaphor_ko": "당구대에서 샷을 선언하는 사람",
+  "remember_ko": "샷을 선언하는 사람 🎯",
+  "common_subjects": [
+    "who's calling",
+    "the board",
+    "the manager"
+  ],
+  "example_work_en": "On this project, the client calls the shots.",
+  "example_work_ko": "이 프로젝트는 클라이언트가 결정권을 쥐고 있어요.",
+  "example_daily_en": "At home, my grandmother calls the shots.",
+  "example_daily_ko": "우리 집은 할머니가 결정하셔.",
+  "bridge_news": "Who's calling the shots in the White House?",
+  "bridge_conversation": "You're calling the shots today.",
+  "bridge_exam": "be in charge / have authority",
+  "exam_line": "편입 독해에서는 be in charge, have the final say, wield authority로 나옵니다.",
+  "exam_source": "편입 독해 지문 환언 · 토익 Part 7",
+  "synonym": "be in charge",
+  "antonym": "take orders",
+  "hook_ko": "'총을 부르는' 사람이 누구냐고?",
+  "hook_hl": "'총을 부르는'",
+  "quiz_ko": "이 팀에서 결정은 누가 내려?",
+  "quiz_en_blank": "Who ________ on this team?",
+  "quiz_options": [
+    "calls the shots",
+    "pulls the strings",
+    "takes the fall",
+    "holds the line"
+  ],
+  "quiz_answer": "A",
+  "distractor_meanings": [
+    {
+      "expr": "pull the strings",
+      "ko": "뒤에서 몰래 조종하다",
+      "en": "Someone else is pulling the strings."
+    },
+    {
+      "expr": "take the fall",
+      "ko": "남 대신 책임을 뒤집어쓰다",
+      "en": "The intern took the fall for the error."
+    },
+    {
+      "expr": "hold the line",
+      "ko": "물러서지 않고 버티다",
+      "en": "The union held the line on wages."
+    }
+  ],
+  "tags": [
+    "in charge",
+    "authority",
+    "decision-maker",
+    "final say"
+  ],
+  "visual_metaphor": "billiard player lining up a shot",
+  "photo_keywords": [
+    "billiards cue shot",
+    "pool table player",
+    "dart bullseye"
+  ],
+  "alt": {
+    "1": "가디언 헤드라인 who's calling the shots in Trump's trade team. 훅: 총을 부르는 사람?",
+    "2": "기사 맥락 3단 체인",
+    "3": "표현 해설",
+    "4": "예문과 브리지",
+    "5": "퀴즈",
+    "6": "저장용 요약표",
+    "7": "오답 이디엄 3개"
+  }
+}

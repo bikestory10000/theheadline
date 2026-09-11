@@ -21,10 +21,18 @@
   "section": "TECHNOLOGY",
   "date": "2026-09-11",
   "news_summary_ko": "스냅챗이 완전 AI 생성 영상을 Spotlight 추천에서 빼기로 했습니다. 유튜브·링크드인·서브스택이 먼저 같은 조치를 했고, 이유는 하나. 저질·반복 콘텐츠가 피드를 뒤덮어서.",
-  "chain": ["AI 영상 범람 ↑", "저질 · 반복 콘텐츠", "AI SLOP"],
+  "chain": [
+    "AI 영상 범람 ↑",
+    "저질 · 반복 콘텐츠",
+    "AI SLOP"
+  ],
   "metaphor_ko": "여물통에 쏟아붓는 찌꺼기",
   "remember_ko": "여물통에 쏟는 찌꺼기 🐷",
-  "common_subjects": ["fight against", "crack down on", "flooded with"],
+  "common_subjects": [
+    "fight against",
+    "crack down on",
+    "flooded with"
+  ],
   "example_work_en": "Half the pitches we got this week were AI slop.",
   "example_work_ko": "이번 주 들어온 제안서 절반이 AI가 찍어낸 껍데기였어요.",
   "example_daily_en": "My feed is nothing but AI slop lately.",
@@ -40,20 +48,67 @@
   "hook_hl": "'구정물'",
   "quiz_ko": "그 영상들은 죄다 AI가 찍어낸 저질이야.",
   "quiz_en_blank": "Those videos are all ________.",
-  "quiz_options": ["AI slop", "clickbait", "deepfakes", "doomscrolling"],
+  "quiz_options": [
+    "AI slop",
+    "clickbait",
+    "deepfakes",
+    "doomscrolling"
+  ],
   "quiz_answer": "A",
   "distractor_meanings": [
-    {"expr": "clickbait", "ko": "클릭 낚시용 제목·썸네일", "en": "The headline was pure clickbait."},
-    {"expr": "deepfake", "ko": "AI로 얼굴·목소리를 바꿔치기한 가짜", "en": "A deepfake of the CEO went viral."},
-    {"expr": "doomscrolling", "ko": "나쁜 뉴스를 끝없이 넘겨 보는 것", "en": "I lost an hour to doomscrolling."}
+    {
+      "expr": "clickbait",
+      "ko": "클릭 낚시용 제목·썸네일",
+      "en": "The headline was pure clickbait."
+    },
+    {
+      "expr": "deepfake",
+      "ko": "AI로 얼굴·목소리를 바꿔치기한 가짜",
+      "en": "A deepfake of the CEO went viral."
+    },
+    {
+      "expr": "doomscrolling",
+      "ko": "나쁜 뉴스를 끝없이 넘겨 보는 것",
+      "en": "I lost an hour to doomscrolling."
+    }
   ],
   "cta_ko": "다음 외신에서 다시 만나게 됩니다.",
-  "collection": ["#001 AI slop"],
-  "tags": ["slop", "low-quality", "clickbait", "human-made"],
+  "collection": [
+    "#001 AI slop",
+    "#002 hang in the balance",
+    "#003 lo-fi",
+    "#004 square off",
+    "#005 call the shots",
+    "#006 flip-flop",
+    "#007 squash",
+    "#008 defy the odds",
+    "#009 drop the hammer"
+  ],
+  "tags": [
+    "slop",
+    "low-quality",
+    "clickbait",
+    "human-made"
+  ],
   "cover_photo": "",
   "visual_metaphor": "pig trough overflowing with grey slop",
-  "photo_keywords": ["pig trough", "overflowing feed", "grey sludge"],
-  "hashtags": ["#외신영어", "#헤드라인영어", "#뉴스영어", "#영어표현", "#편입영어", "#BBC영어", "#AIslop", "#영어공부", "#뉴스로영어", "#시사영어"],
+  "photo_keywords": [
+    "pig trough",
+    "overflowing feed",
+    "grey sludge"
+  ],
+  "hashtags": [
+    "#외신영어",
+    "#헤드라인영어",
+    "#뉴스영어",
+    "#영어표현",
+    "#편입영어",
+    "#BBC영어",
+    "#AIslop",
+    "#영어공부",
+    "#뉴스로영어",
+    "#시사영어"
+  ],
   "alt": {
     "1": "BBC 헤드라인 Snapchat joins other popular platforms in fight against AI slop. 표현 AI slop 강조. 훅: AI가 만든 구정물이 있다고요?",
     "2": "기사 맥락. AI 영상 범람, 저질 반복 콘텐츠, AI slop으로 이어지는 3단 체인",

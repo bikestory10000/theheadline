@@ -1,0 +1,121 @@
+{
+  "kind": "idiom",
+  "series": "NEWS WORD",
+  "number": "#008",
+  "id": "NEWS_WORD_008",
+  "date": "2026-09-12",
+  "expression": "defy the odds",
+  "pos": "verb phrase",
+  "type": "idiom",
+  "emoji": "🐘",
+  "ipa": "[dɪˈfaɪ ði ɑːdz]",
+  "pron_kr": "디파이 디 아즈",
+  "formula": "defy(거스르다) + the odds(확률)",
+  "literal_ko": "확률을 거스르다",
+  "meaning_ko": "가망 없어 보였는데 끝내 해내다",
+  "nuance_ko": "단순히 어려웠다가 아니라, 통계적으로 안 될 일이었다는 전제가 깔립니다. 그래서 생존·우승·회복 기사에 붙습니다.",
+  "origin_ko": "odds는 원래 도박에서 배당률입니다. 판돈이 안 걸릴 쪽에 걸어 이겼다는 그림이죠.",
+  "headline": "How This Orphaned Elephant Defied the Odds",
+  "headline_lead": "How This Orphaned Elephant",
+  "headline_tail": "",
+  "source": "NAT GEO",
+  "section": "ANIMALS",
+  "news_summary_ko": "어미를 잃은 새끼 코끼리는 대개 살아남지 못합니다. 그런데 이 코끼리는 살아남았고, 그 과정을 추적한 기사입니다.",
+  "chain": [
+    "고아 새끼 코끼리",
+    "생존 확률 희박",
+    "DEFIED THE ODDS"
+  ],
+  "metaphor_ko": "배당률을 뒤엎은 한 판",
+  "remember_ko": "확률을 이긴 새끼 코끼리 🐘",
+  "common_subjects": [
+    "defy the odds",
+    "against all odds",
+    "beat the odds"
+  ],
+  "example_work_en": "The startup defied the odds and turned a profit.",
+  "example_work_ko": "그 스타트업은 예상을 뒤엎고 흑자를 냈어요.",
+  "example_daily_en": "He defied the odds and finished the marathon.",
+  "example_daily_ko": "걘 다들 안 될 거라 했는데 마라톤을 완주했어.",
+  "bridge_news": "The team defied the odds.",
+  "bridge_conversation": "You really defied the odds.",
+  "bridge_exam": "succeed against expectations",
+  "exam_line": "편입 독해에서는 against all odds, improbable, unlikely로 나옵니다.",
+  "exam_source": "편입 독해 지문 · 토익 Part 7",
+  "synonym": "beat the odds",
+  "antonym": "succumb",
+  "hook_ko": "새끼 코끼리가 '확률을 거슬렀다'?",
+  "hook_hl": "'확률을 거슬렀다'",
+  "quiz_ko": "그 팀은 모두의 예상을 뒤엎고 우승했다.",
+  "quiz_en_blank": "The team ________ and won the title.",
+  "quiz_options": [
+    "defied the odds",
+    "played the odds",
+    "hedged its bets",
+    "cut its losses"
+  ],
+  "quiz_answer": "A",
+  "distractor_meanings": [
+    {
+      "expr": "play the odds",
+      "ko": "확률이 높은 쪽에 걸다",
+      "en": "Investors are playing the odds this quarter."
+    },
+    {
+      "expr": "hedge your bets",
+      "ko": "위험을 나눠 양다리를 걸다",
+      "en": "The firm is hedging its bets on AI."
+    },
+    {
+      "expr": "cut your losses",
+      "ko": "더 잃기 전에 손을 떼다",
+      "en": "They cut their losses and sold."
+    }
+  ],
+  "cta_ko": "다음 외신에서 다시 만나게 됩니다.",
+  "collection": [
+    "#001 AI slop",
+    "#002 hang in the balance",
+    "#003 lo-fi",
+    "#004 square off",
+    "#005 call the shots",
+    "#006 flip-flop",
+    "#007 squash",
+    "#008 defy the odds",
+    "#009 drop the hammer"
+  ],
+  "tags": [
+    "against all odds",
+    "beat the odds",
+    "unlikely",
+    "survival"
+  ],
+  "visual_metaphor": "lone baby elephant in tall grass",
+  "photo_keywords": [
+    "baby elephant",
+    "orphaned elephant",
+    "elephant calf"
+  ],
+  "cover_photo": "",
+  "hashtags": [
+    "#외신영어",
+    "#헤드라인영어",
+    "#뉴스영어",
+    "#영어표현",
+    "#편입영어",
+    "#영어이디엄",
+    "#영어공부",
+    "#뉴스로영어",
+    "#시사영어",
+    "#defytheodds"
+  ],
+  "alt": {
+    "1": "내셔널지오그래픽 헤드라인 How This Orphaned Elephant Defied the Odds. 훅: 확률을 거슬렀다?",
+    "2": "기사 맥락 3단 체인",
+    "3": "표현 해설",
+    "4": "예문과 브리지",
+    "5": "퀴즈",
+    "6": "저장용 요약표",
+    "7": "오답 이디엄 3개"
+  }
+}

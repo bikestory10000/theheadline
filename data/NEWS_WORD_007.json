@@ -1,0 +1,121 @@
+{
+  "kind": "idiom",
+  "series": "NEWS WORD",
+  "number": "#007",
+  "id": "NEWS_WORD_007",
+  "date": "2026-09-11",
+  "expression": "squash",
+  "pos": "verb",
+  "type": "headline verb",
+  "emoji": "🫓",
+  "ipa": "[skwɑːʃ]",
+  "pron_kr": "스쿼시",
+  "formula": "squash = 눌러서 납작하게 만들다",
+  "literal_ko": "으깨다, 짓누르다",
+  "meaning_ko": "강하게 억눌러 잠재우다",
+  "nuance_ko": "suppress보다 거칠고 물리적입니다. 발로 밟아 뭉개는 그림이라, 헤드라인이 '단호하게 눌렀다'는 어조를 줄 때 씁니다.",
+  "origin_ko": "부드러운 것을 눌러 으깨는 동작이 그대로 뜻이 됐습니다. 채소 squash(호박)도, 라켓 스포츠 squash도 같은 뿌리입니다.",
+  "headline": "Sweden squashed migration. The populist right wants to go further",
+  "headline_lead": "Sweden squashed migration",
+  "headline_tail": "",
+  "source": "THE ECONOMIST",
+  "section": "EUROPE",
+  "news_summary_ko": "스웨덴이 이민을 강하게 억제했는데, 우파 포퓰리즘 정당은 그보다 더 나가자고 한다는 기사입니다.",
+  "chain": [
+    "이민 급증 → 강경 억제",
+    "숫자는 급감",
+    "SQUASHED"
+  ],
+  "metaphor_ko": "발로 밟아 납작해진 깡통",
+  "remember_ko": "밟아 납작해진 깡통 🫓",
+  "common_subjects": [
+    "squash a rumour",
+    "squash the rebellion",
+    "squash hopes"
+  ],
+  "example_work_en": "HR squashed the rumour within an hour.",
+  "example_work_ko": "인사팀이 한 시간 만에 그 소문을 잠재웠어요.",
+  "example_daily_en": "Mom squashed our plan before we even asked.",
+  "example_daily_ko": "엄마가 말 꺼내기도 전에 계획을 뭉개버렸어.",
+  "bridge_news": "Sweden squashed migration.",
+  "bridge_conversation": "Don't squash the idea yet.",
+  "bridge_exam": "suppress / quell",
+  "exam_line": "편입 어휘에서는 suppress, quell, stifle로 환언되어 나옵니다.",
+  "exam_source": "편입 어휘 환언 · 텝스 어휘",
+  "synonym": "quell",
+  "antonym": "fuel",
+  "hook_ko": "스웨덴이 이민을 '으깼다'?",
+  "hook_hl": "'으깼다'",
+  "quiz_ko": "정부가 그 소문을 즉시 잠재웠다.",
+  "quiz_en_blank": "The government quickly ________ the rumours.",
+  "quiz_options": [
+    "squashed",
+    "sparked",
+    "fuelled",
+    "hailed"
+  ],
+  "quiz_answer": "A",
+  "distractor_meanings": [
+    {
+      "expr": "spark",
+      "ko": "촉발하다, 불붙이다",
+      "en": "The remark sparked outrage."
+    },
+    {
+      "expr": "fuel",
+      "ko": "부추기다, 키우다",
+      "en": "Cheap credit fuelled the boom."
+    },
+    {
+      "expr": "hail",
+      "ko": "환영하다, 칭송하다",
+      "en": "Critics hailed the film."
+    }
+  ],
+  "cta_ko": "다음 외신에서 다시 만나게 됩니다.",
+  "collection": [
+    "#001 AI slop",
+    "#002 hang in the balance",
+    "#003 lo-fi",
+    "#004 square off",
+    "#005 call the shots",
+    "#006 flip-flop",
+    "#007 squash",
+    "#008 defy the odds",
+    "#009 drop the hammer"
+  ],
+  "tags": [
+    "suppress",
+    "quell",
+    "headline verb",
+    "crackdown"
+  ],
+  "visual_metaphor": "crushed aluminium can on pavement",
+  "photo_keywords": [
+    "crushed can",
+    "flattened can",
+    "stepped on can"
+  ],
+  "cover_photo": "",
+  "hashtags": [
+    "#외신영어",
+    "#헤드라인영어",
+    "#뉴스영어",
+    "#영어표현",
+    "#편입영어",
+    "#영어이디엄",
+    "#영어공부",
+    "#뉴스로영어",
+    "#시사영어",
+    "#squash"
+  ],
+  "alt": {
+    "1": "이코노미스트 헤드라인 Sweden squashed migration. 훅: 으깼다?",
+    "2": "기사 맥락 3단 체인",
+    "3": "표현 해설",
+    "4": "예문과 브리지",
+    "5": "퀴즈",
+    "6": "저장용 요약표",
+    "7": "오답 헤드라인 동사 3개"
+  }
+}

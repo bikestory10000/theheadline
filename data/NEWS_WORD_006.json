@@ -1,0 +1,121 @@
+{
+  "kind": "idiom",
+  "series": "NEWS WORD",
+  "number": "#006",
+  "id": "NEWS_WORD_006",
+  "date": "2026-09-11",
+  "cover_photo": "",
+  "cta_ko": "다음 외신에서 다시 만나게 됩니다.",
+  "collection": [
+    "#001 AI slop",
+    "#002 hang in the balance",
+    "#003 lo-fi",
+    "#004 square off",
+    "#005 call the shots",
+    "#006 flip-flop",
+    "#007 squash",
+    "#008 defy the odds",
+    "#009 drop the hammer"
+  ],
+  "hashtags": [
+    "#외신영어",
+    "#헤드라인영어",
+    "#뉴스영어",
+    "#영어표현",
+    "#편입영어",
+    "#영어이디엄",
+    "#영어공부",
+    "#뉴스로영어",
+    "#시사영어",
+    "#flipflop"
+  ],
+  "expression": "flip-flop",
+  "pos": "noun / verb",
+  "type": "idiom",
+  "emoji": "🩴",
+  "ipa": "[ˈflɪp flɑːp]",
+  "pron_kr": "플립플랍",
+  "formula": "flip(뒤집다) + flop(털썩) — 뒤집히는 소리",
+  "literal_ko": "쪼리, 뒤집기",
+  "meaning_ko": "입장을 갑자기 뒤집는 것, 말 바꾸기",
+  "nuance_ko": "비난하는 말입니다. 신중한 '재검토'가 아니라 줏대 없이 뒤집었다는 뉘앙스라, 정치인에게 붙으면 공격입니다.",
+  "origin_ko": "뒤집힐 때 나는 소리를 흉내 낸 말입니다. 걸을 때 철퍽거리는 샌들도, 정치인의 말 바꾸기도 같은 소리에서 나왔습니다.",
+  "headline": "Trump's Flip-Flop on Strait of Hormuz Fees Raises New Risks",
+  "headline_lead": "Trump's Flip-Flop",
+  "headline_tail": "",
+  "source": "NYT",
+  "section": "POLITICS",
+  "news_summary_ko": "호르무즈 해협 통행료를 두고 트럼프가 입장을 갑자기 뒤집었고, 그 번복 자체가 새 위험을 만든다는 기사입니다.",
+  "chain": [
+    "통행료 입장 발표",
+    "며칠 만에 정반대로",
+    "FLIP-FLOP"
+  ],
+  "metaphor_ko": "철퍽철퍽 뒤집히는 쪼리",
+  "remember_ko": "뒤집히는 쪼리 🩴",
+  "common_subjects": [
+    "Trump's flip-flop",
+    "a flip-flop on",
+    "accused of flip-flopping"
+  ],
+  "example_work_en": "The manager flip-flopped on remote work twice this month.",
+  "example_work_ko": "매니저가 이번 달에만 재택 방침을 두 번 뒤집었어요.",
+  "example_daily_en": "Stop flip-flopping and pick a restaurant.",
+  "example_daily_ko": "그만 왔다 갔다 하고 식당 좀 정해.",
+  "bridge_news": "The president's flip-flop on tariffs.",
+  "bridge_conversation": "He flip-flopped again.",
+  "bridge_exam": "reverse one's position / reversal",
+  "exam_line": "편입 독해에서는 reversal, backtrack, renege on으로 환언되어 나옵니다.",
+  "exam_source": "편입 독해 지문 · 텝스 어휘",
+  "synonym": "U-turn",
+  "antonym": "double down",
+  "hook_ko": "트럼프의 '쪼리'가 위험을 키운다?",
+  "hook_hl": "'쪼리'",
+  "quiz_ko": "정부가 그 정책에서 또 입장을 뒤집었다.",
+  "quiz_en_blank": "The government ________ on the policy again.",
+  "quiz_options": [
+    "flip-flopped",
+    "doubled down",
+    "dug in",
+    "held firm"
+  ],
+  "quiz_answer": "A",
+  "distractor_meanings": [
+    {
+      "expr": "double down",
+      "ko": "비판에도 더 밀어붙이다",
+      "en": "She doubled down on her claim."
+    },
+    {
+      "expr": "dig in",
+      "ko": "입장을 굳히고 버티다",
+      "en": "Both sides dug in for a long fight."
+    },
+    {
+      "expr": "hold firm",
+      "ko": "흔들리지 않고 지키다",
+      "en": "The bank held firm on rates."
+    }
+  ],
+  "tags": [
+    "U-turn",
+    "reversal",
+    "backtrack",
+    "double down"
+  ],
+  "visual_metaphor": "pair of flip-flop sandals on sand",
+  "photo_keywords": [
+    "flip flops sand",
+    "beach sandals",
+    "thong sandals"
+  ],
+  "alt": {
+    "1": "NYT 헤드라인 Trump's Flip-Flop on Strait of Hormuz Fees. 훅: 트럼프의 쪼리?",
+    "2": "기사 맥락 3단 체인",
+    "3": "표현 해설",
+    "4": "예문과 브리지",
+    "5": "퀴즈",
+    "6": "저장용 요약표",
+    "7": "오답 표현 3개"
+  }
+}

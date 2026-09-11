@@ -1,0 +1,13 @@
+{
+  "kind": "weekly",
+  "id": "WEEKLY_W38",
+  "week": "W38",
+  "items": [
+    "data/NEWS_WORD_004.json",
+    "data/NEWS_WORD_005.json",
+    "data/NEWS_WORD_006.json",
+    "data/NEWS_WORD_007.json",
+    "data/NEWS_WORD_008.json",
+    "data/NEWS_WORD_009.json"
+  ]
+}

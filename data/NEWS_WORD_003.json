@@ -1,0 +1,121 @@
+{
+  "kind": "idiom",
+  "series": "NEWS WORD",
+  "number": "#003",
+  "id": "NEWS_WORD_003",
+  "date": "2026-09-11",
+  "cover_photo": "",
+  "cta_ko": "다음 외신에서 다시 만나게 됩니다.",
+  "collection": [
+    "#001 AI slop",
+    "#002 hang in the balance",
+    "#003 lo-fi",
+    "#004 square off",
+    "#005 call the shots",
+    "#006 flip-flop",
+    "#007 squash",
+    "#008 defy the odds",
+    "#009 drop the hammer"
+  ],
+  "hashtags": [
+    "#외신영어",
+    "#헤드라인영어",
+    "#뉴스영어",
+    "#영어표현",
+    "#편입영어",
+    "#영어이디엄",
+    "#영어공부",
+    "#뉴스로영어",
+    "#시사영어",
+    "#lofi"
+  ],
+  "expression": "lo-fi",
+  "pos": "adjective",
+  "type": "neologism",
+  "emoji": "📻",
+  "ipa": "[ˌloʊ ˈfaɪ]",
+  "pron_kr": "로우파이",
+  "formula": "lo(w) + fi(delity) = 낮은 충실도",
+  "literal_ko": "저음질의",
+  "meaning_ko": "일부러 덜 다듬고 단순하게 가는, 아날로그적인",
+  "nuance_ko": "기술이 없어서가 아니라 일부러 거칠게 두는 겁니다. 요즘은 음악을 넘어 생활 방식에도 붙습니다.",
+  "origin_ko": "음향 용어 low fidelity(원음 재현도가 낮음)에서 왔습니다. 90년대 인디 음악이 이 거친 질감을 멋으로 만들었죠.",
+  "headline": "The Lo-Fi Way I Broke My Addiction to the Algorithm",
+  "headline_lead": "The Lo-Fi Way",
+  "headline_tail": "",
+  "source": "NYT OPINION",
+  "section": "OPINION",
+  "news_summary_ko": "알고리즘 피드 중독을 끊은 방법을 쓴 칼럼. 첨단 앱이 아니라 일부러 불편하고 단순한 방식으로 돌아갔다는 이야기입니다.",
+  "chain": [
+    "알고리즘 피드 중독",
+    "덜 편리한 방식으로 후퇴",
+    "LO-FI"
+  ],
+  "metaphor_ko": "지직거리는 카세트테이프",
+  "remember_ko": "지직거리는 카세트 📻",
+  "common_subjects": [
+    "lo-fi music",
+    "a lo-fi approach",
+    "lo-fi living"
+  ],
+  "example_work_en": "We went lo-fi for the pitch — just a whiteboard, no slides.",
+  "example_work_ko": "발표는 일부러 단순하게 갔어요. 슬라이드 없이 화이트보드만.",
+  "example_daily_en": "I switched to a lo-fi phone with no apps.",
+  "example_daily_ko": "앱 없는 단순한 폰으로 바꿨어.",
+  "bridge_news": "A lo-fi way to beat the algorithm.",
+  "bridge_conversation": "Let's keep it lo-fi.",
+  "bridge_exam": "low-tech / unsophisticated",
+  "exam_line": "편입 독해에서는 low-tech, rudimentary, unsophisticated로 풀어 나옵니다.",
+  "exam_source": "편입 독해 지문 · 텝스 어휘",
+  "synonym": "low-tech",
+  "antonym": "hi-fi",
+  "hook_ko": "'저음질'로 중독을 끊었다고?",
+  "hook_hl": "'저음질'",
+  "quiz_ko": "나 요즘 폰 덜 쓰는 단순한 생활로 돌아갔어.",
+  "quiz_en_blank": "I've gone back to a ________ life.",
+  "quiz_options": [
+    "lo-fi",
+    "hi-fi",
+    "high-tech",
+    "plug-and-play"
+  ],
+  "quiz_answer": "A",
+  "distractor_meanings": [
+    {
+      "expr": "hi-fi",
+      "ko": "고음질의, 원음에 충실한",
+      "en": "He spent a fortune on hi-fi speakers."
+    },
+    {
+      "expr": "high-tech",
+      "ko": "첨단 기술의",
+      "en": "The lab is packed with high-tech gear."
+    },
+    {
+      "expr": "plug-and-play",
+      "ko": "꽂으면 바로 되는, 설정 필요 없는",
+      "en": "The kit is plug-and-play."
+    }
+  ],
+  "tags": [
+    "low-tech",
+    "analog",
+    "algorithm",
+    "fidelity"
+  ],
+  "visual_metaphor": "cassette tape and old radio",
+  "photo_keywords": [
+    "cassette tape",
+    "old radio",
+    "vintage walkman"
+  ],
+  "alt": {
+    "1": "NYT 오피니언 헤드라인 The Lo-Fi Way I Broke My Addiction to the Algorithm. 훅: 저음질로 중독을 끊었다고?",
+    "2": "기사 맥락 3단 체인",
+    "3": "표현 해설",
+    "4": "예문과 브리지",
+    "5": "퀴즈",
+    "6": "저장용 요약표",
+    "7": "오답 표현 3개"
+  }
+}
