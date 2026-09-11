@@ -15,9 +15,10 @@ python3 build_v6_grammar.py data/HEADLINE_GRAMMAR_001.json
 python3 build_v6_weekly.py W37 data/NEWS_IDIOM_00[1-5].json   # 정답은 stdout(캡션용)
 python3 render.py
 
-## 주간 편성 → 빌더
-월/수/목  idiom      토 weekly (월~금 JSON 자동)      일 grammar
-화/금     초기 수동 (VERB BANK · THREE HEADLINES · SEEN IN THE EXAM)
+## 주간 편성
+월~토  NEWS WORD (이디엄, 7장)
+일     WEEKLY (그 주 월~토 6건 정리 + 복습 퀴즈, 2장)
+GRAMMAR/VERB BANK 등은 보류 — data/HEADLINE_GRAMMAR_001.json은 큐에서 제외된 채 보관
 
 ## 주의
 - 발행 전 헤드라인은 실제 기사로 교체 (지금 값은 샘플). #002~#005는 WEEKLY 시연용 스텁.

@@ -3,5 +3,50 @@
     "json": "data/NEWS_WORD_001.json",
     "date": "2026-09-11",
     "done": true
+  },
+  {
+    "json": "data/NEWS_WORD_002.json",
+    "date": "2026-09-12",
+    "done": false
+  },
+  {
+    "json": "data/NEWS_WORD_003.json",
+    "date": "2026-09-13",
+    "done": false
+  },
+  {
+    "json": "data/NEWS_WORD_004.json",
+    "date": "2026-09-14",
+    "done": false
+  },
+  {
+    "json": "data/NEWS_WORD_005.json",
+    "date": "2026-09-15",
+    "done": false
+  },
+  {
+    "json": "data/NEWS_WORD_006.json",
+    "date": "2026-09-16",
+    "done": false
+  },
+  {
+    "json": "data/NEWS_WORD_007.json",
+    "date": "2026-09-17",
+    "done": false
+  },
+  {
+    "json": "data/NEWS_WORD_008.json",
+    "date": "2026-09-18",
+    "done": false
+  },
+  {
+    "json": "data/NEWS_WORD_009.json",
+    "date": "2026-09-19",
+    "done": false
+  },
+  {
+    "json": "data/WEEKLY_W38.json",
+    "date": "2026-09-20",
+    "done": false
   }
 ]

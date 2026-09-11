@@ -10,6 +10,10 @@ TOTAL = 7
 def sh(n, body, glow=None): return _shell(n, TOTAL, body, D["alt"][str(n)], "idiom", D["id"], glow)
 def u(en): return re.sub(re.escape(D['expression']), f"<u>{e(D['expression'])}</u>", e(en), flags=re.I)
 def acc_in(text, part): return e(text).replace(e(part), f'<span class="acc">{e(part)}</span>')
+L = len(D['expression'])
+COVER_PX = 190 if L <= 10 else 150 if L <= 14 else 122   # 표현 길이별 자동 축소
+WORD_PX  = 122 if L <= 12 else 100 if L <= 16 else 84
+MEAN_PX  = 54 if len(D['meaning_ko']) <= 18 else 46
 
 # ---------------- 01 COVER : 사진 있으면 58/42, 없으면 타이포 전용 ----------------
 if D.get('cover_photo'):
@@ -37,7 +41,7 @@ else:
   </div>
   <div style="text-align:center">
     <div style="font-size:150px;line-height:1;margin-bottom:10px">{D['emoji']}</div>
-    <div class="gw acc" style="font-size:190px;line-height:1;letter-spacing:-.01em">{e(D['expression'])}</div>
+    <div class="gw acc" style="font-size:{COVER_PX}px;line-height:1.02;letter-spacing:-.01em">{e(D['expression'])}</div>
   </div>
   <div>
     <div class="gw" style="font-size:52px;line-height:1.35;color:var(--w95);margin-bottom:26px">{acc_in(D['hook_ko'], D['hook_hl'])}</div>
@@ -71,11 +75,11 @@ c3 = f"""
   <div class="chip">THE EXPRESSION</div>
   <div style="{rope};margin-bottom:26px"></div>
   <div style="display:flex;align-items:center;justify-content:space-between">
-    <div class="gw acc" style="font-size:122px;line-height:1">{e(D['expression'])}</div>
+    <div class="gw acc" style="font-size:{WORD_PX}px;line-height:1">{e(D['expression'])}</div>
     <div style="font-size:96px;line-height:1">{D['emoji']}</div></div>
   <div style="{rope};margin-top:26px;margin-bottom:26px"></div>
   <div style="display:flex;gap:18px;font-size:28px;color:var(--w60);margin-bottom:22px"><span style="font-family:var(--ni)">{e(D['ipa'])}</span><span>·</span><span>{e(D['pron_kr'])}</span></div>
-  <div class="gw" style="font-size:54px;margin-bottom:14px">{e(D['meaning_ko'])}</div>
+  <div class="gw" style="font-size:{MEAN_PX}px;margin-bottom:14px;line-height:1.3">{e(D['meaning_ko'])}</div>
   <div style="font-size:28px;color:var(--w60);margin-bottom:30px"><b style="color:var(--w70)">직역</b> {e(D['formula'])} → {e(D['literal_ko'])}</div>
   <div class="memo" style="margin-bottom:26px"><div style="color:var(--w95)">{e(D['nuance_ko'])}</div>
     <div style="font-size:28px;color:var(--w60);font-style:italic;margin-top:12px"><span class="lbl" style="font-style:normal;font-size:20px;color:var(--w60)">ORIGIN</span> &nbsp;{e(D['origin_ko'])}</div></div>

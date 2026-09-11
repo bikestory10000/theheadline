@@ -44,6 +44,14 @@ def wait_finished(cid, label):
 
 # ---------- 캡션 ----------
 def caption():
+    if D.get("kind") == "weekly":
+        items = [json.loads(pathlib.Path(f).read_text(encoding="utf-8")) for f in D["items"]]
+        ans = [f"{i+1}. {x['quiz_options']['ABCD'.index(x['quiz_answer'])]}" for i, x in enumerate(items)]
+        return "\n".join([f"이번 주 표현 {len(items)}개, 한 장으로 ({D['week']})", "",
+            *[f"{x['number']} {x['expression']} = {x['meaning_ko']}" for x in items], "",
+            "2장 복습 퀴즈 정답: " + " / ".join(ans), "",
+            "놓친 편은 프로필 고정 게시물에서.", "",
+            "#외신영어 #헤드라인영어 #뉴스영어 #영어표현 #편입영어 #영어공부 #주간정리"])
     lines = [D['hook_ko'], "",
              f"{D['source']}가 이렇게 썼습니다: “{D['headline']}”",
              D['news_summary_ko'], "",
@@ -55,7 +63,7 @@ def caption():
     return "\n".join(lines)
 
 # ---------- 이미지 목록 ----------
-tag = f"{D['series'].replace(' ','_')}_{D['number'].strip('#')}"
+tag = D['id']
 files = sorted(pathlib.Path("png").glob(f"{tag}_card_0?.png"))
 if not files: raise SystemExit("png/ 에 렌더된 카드가 없습니다. render.py 먼저.")
 if len(files) > 10: raise SystemExit(f"캐러셀은 API 기준 10장 최대. 현재 {len(files)}장")
