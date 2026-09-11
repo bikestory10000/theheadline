@@ -1,1 +1,7 @@
-[{"json":"data/NEWS_WORD_001.json","date":"2026-09-11","done":false}]
+[
+  {
+    "json": "data/NEWS_WORD_001.json",
+    "date": "2026-09-11",
+    "done": true
+  }
+]
