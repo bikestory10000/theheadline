@@ -39,7 +39,7 @@ jobs:
             echo "json=$IN" >> $GITHUB_OUTPUT
             echo "수동 지정: $IN"
           else
-            python queue.py pick >> $GITHUB_OUTPUT
+            python schedule.py pick >> $GITHUB_OUTPUT
           fi
 
       - name: Build + Render
@@ -72,5 +72,5 @@ jobs:
       - name: Mark published
         if: ${{ github.event.inputs.dry_run != 'true' }}
         run: |
-          python queue.py done "${{ steps.pick.outputs.json }}" || true
+          python schedule.py done "${{ steps.pick.outputs.json }}" || true
           git add -A published.json queue.json && git commit -m "published" && git push || true
