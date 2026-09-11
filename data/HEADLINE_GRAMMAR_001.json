@@ -1,0 +1,56 @@
+{
+  "id": "HEADLINE_GRAMMAR_001",
+  "kind": "grammar",
+  "series": "HEADLINE GRAMMAR",
+  "number": "#001",
+  "rule": "to부정사 = 미래",
+  "rule_en": "to + verb → will",
+  "rule_ko": "헤드라인에서 to부정사는 '~할 예정이다'입니다. will과 is going to를 쓸 자리가 없어서 to 하나로 줄인 겁니다.",
+  "hook_ko": "BBC는 왜 will을 안 쓸까?",
+  "examples": [
+    {
+      "src": "BBC",
+      "hl": "Fed to hold rates as inflation cools",
+      "full": "The Fed will hold rates as inflation cools."
+    },
+    {
+      "src": "Reuters",
+      "hl": "UK to ban disposable vapes from June",
+      "full": "The UK will ban disposable vapes from June."
+    },
+    {
+      "src": "NYT",
+      "hl": "Apple to unveil new headset next week",
+      "full": "Apple is going to unveil a new headset next week."
+    }
+  ],
+  "quiz_hl": "Seoul to host climate summit in 2027",
+  "quiz_options": [
+    "서울이 정상회의를 열었다",
+    "서울이 정상회의를 열 예정이다",
+    "서울이 정상회의를 열고 있다",
+    "서울이 정상회의 개최를 거부했다"
+  ],
+  "quiz_answer": "B",
+  "summary": [
+    "to + 동사 = 미래(will)",
+    "주어 뒤 be동사도 함께 생략",
+    "과거는 현재형으로 씀 (다음 편)"
+  ],
+  "collection": [
+    "#001 to부정사 = 미래",
+    "#002 현재형 = 과거 (예정)",
+    "#003 콤마 = and (예정)"
+  ],
+  "alt": {
+    "1": "헤드라인 문법 커버. to부정사는 미래",
+    "2": "규칙 설명",
+    "3": "실제 헤드라인 3개와 복원 문장",
+    "4": "퀴즈",
+    "5": "요약"
+  },
+  "demo": {
+    "headline": "Fed [to hold] rates",
+    "normal": "Fed [will hold] rates"
+  }
+}

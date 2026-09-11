@@ -1,0 +1,20 @@
+{
+  "id": "NEWS_IDIOM_004",
+  "kind": "idiom",
+  "series": "NEWS IDIOM",
+  "number": "#004",
+  "expression": "call the shots",
+  "emoji": "🎯",
+  "meaning_ko": "결정권을 쥐다",
+  "bridge_exam": "be in charge",
+  "quiz_ko": "이제 누가 결정권을 쥐고 있지?",
+  "quiz_en_blank": "Who is ________ now?",
+  "quiz_options": [
+    "call the shots",
+    "on the ropes",
+    "in the loop",
+    "off the hook"
+  ],
+  "quiz_answer": "A",
+  "_stub": true
+}

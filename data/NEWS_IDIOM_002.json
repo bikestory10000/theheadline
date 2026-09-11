@@ -1,0 +1,20 @@
+{
+  "id": "NEWS_IDIOM_002",
+  "kind": "idiom",
+  "series": "NEWS IDIOM",
+  "number": "#002",
+  "expression": "weather the storm",
+  "emoji": "🌊",
+  "meaning_ko": "위기를 견뎌내다",
+  "bridge_exam": "survive a crisis",
+  "quiz_ko": "그 회사는 이번 위기를 견뎌냈다.",
+  "quiz_en_blank": "The company managed to ________.",
+  "quiz_options": [
+    "weather the storm",
+    "ride the wave",
+    "hit the brakes",
+    "call the shots"
+  ],
+  "quiz_answer": "A",
+  "_stub": true
+}

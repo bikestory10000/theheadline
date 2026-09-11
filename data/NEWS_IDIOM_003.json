@@ -1,0 +1,20 @@
+{
+  "id": "NEWS_IDIOM_003",
+  "kind": "idiom",
+  "series": "NEWS IDIOM",
+  "number": "#003",
+  "expression": "hit the brakes",
+  "emoji": "🛑",
+  "meaning_ko": "급히 중단하다",
+  "bridge_exam": "suspend / halt",
+  "quiz_ko": "정부가 그 계획을 급히 멈췄다.",
+  "quiz_en_blank": "The government ________ on the plan.",
+  "quiz_options": [
+    "hit the brakes",
+    "bit the bullet",
+    "broke the ice",
+    "raised the bar"
+  ],
+  "quiz_answer": "A",
+  "_stub": true
+}
