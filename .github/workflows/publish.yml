@@ -1,1 +1,71 @@
+name: Render & Publish
 
+on:
+  workflow_dispatch:
+    inputs:
+      json:
+        description: "발행할 JSON 경로 (예: data/NEWS_WORD_001.json)"
+        required: true
+      dry_run:
+        description: "true면 발행 없이 렌더·검사만"
+        default: "false"
+  schedule:
+    - cron: "30 22 * * 0-4"   # UTC 22:30 = KST 07:30, 월~금
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+
+      - name: Install
+        run: |
+          pip install playwright pillow
+          python -m playwright install --with-deps chromium
+
+      - name: Pick JSON (오늘 큐 or 수동 입력)
+        id: pick
+        run: |
+          if [ -n "${{ inputs.json }}" ]; then
+            echo "json=${{ inputs.json }}" >> $GITHUB_OUTPUT
+          else
+            python queue.py pick >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build + Render
+        run: |
+          J="${{ steps.pick.outputs.json }}"
+          KIND=$(python -c "import json;print(json.load(open('$J')).get('kind','idiom'))")
+          case $KIND in
+            grammar) python build_v6_grammar.py "$J" ;;
+            *)       python build_v6_idiom.py "$J" ;;
+          esac
+          python render.py
+
+      - name: Commit PNGs → Pages
+        run: |
+          git config user.name  "theheadline-bot"
+          git config user.email "bot@theheadline"
+          git add png/ cards/ published.json queue.json 2>/dev/null || true
+          git commit -m "render: ${{ steps.pick.outputs.json }}" || echo "nothing to commit"
+          git push
+
+      - name: Publish to Instagram
+        if: ${{ inputs.dry_run != 'true' }}
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          BASE_URL: https://bikestory10000.github.io/theheadline/png
+        run: python publish.py "${{ steps.pick.outputs.json }}"
+
+      - name: Mark published
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          python queue.py done "${{ steps.pick.outputs.json }}"
+          git add published.json queue.json && git commit -m "published: ${{ steps.pick.outputs.json }}" && git push || true
