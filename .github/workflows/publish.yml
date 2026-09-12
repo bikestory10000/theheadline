@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       json:
-        description: "발행할 JSON 경로 (예: data/NEWS_WORD_001.json)"
-        required: true
+        description: "발행할 JSON 경로 (예: data/NEWS_WORD_004.json)"
+        required: false
+        default: ""
       dry_run:
         description: "true면 발행 없이 렌더·검사만"
         default: "false"
@@ -22,25 +23,34 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
+        with:
+          python-version: "3.12"
 
       - name: Install
         run: |
           pip install playwright pillow
           python -m playwright install --with-deps chromium
 
-      - name: Pick JSON (오늘 큐 or 수동 입력)
+      - name: Pick JSON
         id: pick
         run: |
-          if [ -n "${{ inputs.json }}" ]; then
-            echo "json=${{ inputs.json }}" >> $GITHUB_OUTPUT
+          IN="${{ github.event.inputs.json }}"
+          if [ -n "$IN" ]; then
+            echo "json=$IN" >> $GITHUB_OUTPUT
+            echo "수동 지정: $IN"
           else
             python schedule.py pick >> $GITHUB_OUTPUT
           fi
 
+      - name: 오늘 발행 없음
+        if: ${{ steps.pick.outputs.json == '' }}
+        run: echo "큐에 오늘 항목이 없습니다. 정상 종료."
+
       - name: Build + Render
+        if: ${{ steps.pick.outputs.json != '' }}
         run: |
           J="${{ steps.pick.outputs.json }}"
+          echo "대상: $J"
           KIND=$(python -c "import json;print(json.load(open('$J')).get('kind','idiom'))")
           case $KIND in
             grammar) python build_v6_grammar.py "$J" ;;
@@ -49,16 +59,17 @@ jobs:
           esac
           python render.py
 
-      - name: Commit PNGs → Pages
+      - name: Commit PNGs
+        if: ${{ steps.pick.outputs.json != '' }}
         run: |
           git config user.name  "theheadline-bot"
           git config user.email "bot@theheadline"
-          git add png/ cards/ published.json queue.json 2>/dev/null || true
+          git add -A png cards published.json queue.json || true
           git commit -m "render: ${{ steps.pick.outputs.json }}" || echo "nothing to commit"
-          git push
+          git push || true
 
       - name: Publish to Instagram
-        if: ${{ inputs.dry_run != 'true' }}
+        if: ${{ steps.pick.outputs.json != '' && github.event.inputs.dry_run != 'true' }}
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
@@ -66,7 +77,7 @@ jobs:
         run: python publish.py "${{ steps.pick.outputs.json }}"
 
       - name: Mark published
-        if: ${{ inputs.dry_run != 'true' }}
+        if: ${{ steps.pick.outputs.json != '' && github.event.inputs.dry_run != 'true' }}
         run: |
-          python schedule.py done "${{ steps.pick.outputs.json }}"
-          git add published.json queue.json && git commit -m "published: ${{ steps.pick.outputs.json }}" && git push || true
+          python schedule.py done "${{ steps.pick.outputs.json }}" || true
+          git add -A published.json queue.json && git commit -m "published" && git push || true
