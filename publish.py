@@ -8,7 +8,7 @@
   python3 publish.py data/NEWS_IDIOM_001.json            # 실제 발행
   python3 publish.py data/NEWS_IDIOM_001.json --dry-run  # URL 검사 + 캡션만 출력
 """
-import json, os, sys, time, glob, pathlib, urllib.request, urllib.parse
+import json, os, sys, time, glob, pathlib, urllib.request, urllib.parse, urllib.error
 
 API = "https://graph.instagram.com/v23.0"
 IG_USER = os.environ.get("IG_USER_ID")
@@ -21,11 +21,25 @@ D = json.loads(SRC.read_text(encoding="utf-8"))
 def post(path, data):
     body = urllib.parse.urlencode({**data, "access_token": TOKEN}).encode()
     req = urllib.request.Request(f"{API}/{path}", data=body, method="POST")
-    with urllib.request.urlopen(req, timeout=60) as r: return json.load(r)
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as ex:
+        detail = ex.read().decode("utf-8", "replace")
+        safe = {k: v for k, v in data.items() if k != "caption"}
+        print(f"\n✗ API 오류 {ex.code}  POST {path}")
+        print(f"  보낸 값: {safe}")
+        print(f"  응답: {detail}\n")
+        raise SystemExit(1)
 
 def get(path, params):
     q = urllib.parse.urlencode({**params, "access_token": TOKEN})
-    with urllib.request.urlopen(f"{API}/{path}?{q}", timeout=60) as r: return json.load(r)
+    try:
+        with urllib.request.urlopen(f"{API}/{path}?{q}", timeout=60) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as ex:
+        print(f"\n✗ API 오류 {ex.code}  GET {path}\n  응답: {ex.read().decode('utf-8','replace')}\n")
+        raise SystemExit(1)
 
 def head_ok(url):
     try:
@@ -84,18 +98,22 @@ if DRY:
     print("\n(dry-run) 여기서 멈춤."); sys.exit(0)
 if not (IG_USER and TOKEN): raise SystemExit("IG_USER_ID / IG_ACCESS_TOKEN 환경변수 필요")
 
-print("\n3) 자식 컨테이너 생성")
+print("\n3) 토큰·계정 확인")
+me = get("me", {"fields": "user_id,username"})
+print("   ·", me.get("username"), me.get("user_id"))
+
+print("\n4) 자식 컨테이너 생성")
 children = []
 for u, f in zip(urls, files):
     r = post(f"{IG_USER}/media", {"image_url": u, "is_carousel_item": "true"})
     children.append(r["id"]); print("   ·", f.name, "→", r["id"])
 for cid in children: wait_finished(cid, cid)
 
-print("4) 부모 컨테이너 생성")
+print("5) 부모 컨테이너 생성")
 parent = post(f"{IG_USER}/media", {"media_type": "CAROUSEL", "children": ",".join(children), "caption": caption()})
 wait_finished(parent["id"], "parent")
 
-print("5) 발행")
+print("6) 발행")
 res = post(f"{IG_USER}/media_publish", {"creation_id": parent["id"]})
 print("✓ 발행 완료. media id:", res.get("id"))
 
