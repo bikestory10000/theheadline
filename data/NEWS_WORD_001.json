@@ -98,16 +98,17 @@
     "grey sludge"
   ],
   "hashtags": [
+    "#영어공부",
+    "#영어표현",
+    "#영어회화공부",
+    "#성인영어",
+    "#영어원서읽기",
+    "#뉴스영어",
+    "#시사영어",
     "#외신영어",
     "#헤드라인영어",
-    "#뉴스영어",
-    "#영어표현",
     "#편입영어",
-    "#BBC영어",
-    "#AIslop",
-    "#영어공부",
-    "#뉴스로영어",
-    "#시사영어"
+    "#AIslop"
   ],
   "alt": {
     "1": "BBC 헤드라인 Snapchat joins other popular platforms in fight against AI slop. 표현 AI slop 강조. 훅: AI가 만든 구정물이 있다고요?",
@@ -117,5 +118,7 @@
     "5": "퀴즈. 한국어 문장을 영어로 옮기는 4지선다, 정답은 다음 장",
     "6": "저장용 요약. 정답 A, 뜻·심상·유사·반대·뉴스용례·시험 환언 표",
     "7": "퀴즈 오답 보기 정리. clickbait, deepfake, doomscrolling"
-  }
+  },
+  "meaning_short": "AI가 찍어낸 저질 콘텐츠",
+  "inflected": "AI slop"
 }
