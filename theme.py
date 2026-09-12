@@ -10,12 +10,12 @@ BG = "#0F1117"
 
 def css(acc):
     return f"""
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,700&display=swap" rel="stylesheet">
 <style>
 @font-face{{font-family:'GangwonEduPower';src:url('https://cdn.jsdelivr.net/gh/fonts-archive/GangwonEduPower/GangwonEduPower.woff2') format('woff2');font-display:swap}}
 :root{{--acc:{acc};--gold:#FFD764;--lime:#C8E86A;
   --w95:rgba(255,255,255,.95);--w70:rgba(255,255,255,.70);--w60:rgba(255,255,255,.60);--w40:rgba(255,255,255,.40);--w30:rgba(255,255,255,.30);--w06:rgba(255,255,255,.06);
-  --gw:'GangwonEduPower',cursive;--ns:'Noto Sans KR','Noto Sans',sans-serif;--ni:'Noto Sans',sans-serif;}}
+  --gw:'GangwonEduPower',cursive;--serif:'Playfair Display',Georgia,serif;--ns:'Noto Sans KR','Noto Sans',sans-serif;--ni:'Noto Sans',sans-serif;}}
 *{{box-sizing:border-box;margin:0;padding:0}}
 html,body{{width:1080px;height:1350px;overflow:hidden}}
 body{{background:{BG};color:var(--w95);font-family:var(--ns);position:relative;word-break:keep-all}}
@@ -26,7 +26,9 @@ body{{background:{BG};color:var(--w95);font-family:var(--ns);position:relative;w
 .si{{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:120px 63px 100px}}
 .chip{{display:inline-block;align-self:flex-start;font-size:26px;font-weight:700;letter-spacing:.1em;padding:10px 30px;border-radius:40px;margin-bottom:34px;
   background:color-mix(in srgb,var(--acc) 14%,transparent);color:var(--acc)}}
-.gw{{font-family:var(--gw)}}
+ .gw{{font-family:var(--gw)}}
+.serif{{font-family:var(--serif)}}
+.mark{{background:var(--acc);color:#0F1117;padding:0 .1em;border-radius:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}}
 .lbl{{font-size:22px;font-weight:700;letter-spacing:.1em;color:var(--w70)}}
 .box{{border:2px solid var(--w30);background:var(--w06);border-radius:24px}}
 .acc{{color:var(--acc)}} .goldc{{color:var(--gold)}}

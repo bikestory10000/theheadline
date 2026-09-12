@@ -53,13 +53,13 @@ def caption():
             "놓친 편은 프로필 고정 게시물에서.", "",
             "#외신영어 #헤드라인영어 #뉴스영어 #영어표현 #편입영어 #영어공부 #주간정리"])
     lines = [D['hook_ko'], "",
-             f"{D['source']}가 이렇게 썼습니다: “{D['headline']}”",
+             f"{D['source']} — “{D['headline']}”",
              D['news_summary_ko'], "",
              f"{D['expression']} = {D['meaning_ko']}",
              D['example_work_en'], "",
              f"퀴즈 정답은 {D['quiz_answer']}. 몇 번 골랐는지 댓글로 남겨주세요.",
              "이 시리즈 전체 목록은 프로필 고정 게시물에.", "",
-             " ".join(D['hashtags'][:10])]
+             " ".join(D['hashtags'])]
     return "\n".join(lines)
 
 # ---------- 이미지 목록 ----------

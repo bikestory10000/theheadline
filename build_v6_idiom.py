@@ -15,41 +15,33 @@ COVER_PX = 190 if L <= 10 else 150 if L <= 14 else 122   # 표현 길이별 자�
 WORD_PX  = 122 if L <= 12 else 100 if L <= 16 else 84
 MEAN_PX  = 54 if len(D['meaning_ko']) <= 18 else 46
 
-# ---------------- 01 COVER : 사진 있으면 58/42, 없으면 타이포 전용 ----------------
-if D.get('cover_photo'):
-    c1 = f"""
-<div style="position:absolute;left:0;top:0;width:1080px;height:783px;background:url('{D['cover_photo']}') center/cover"></div>
-<div style="position:absolute;left:0;top:560px;width:1080px;height:223px;background:linear-gradient(to bottom,transparent,#0F1117)"></div>
-<div style="position:absolute;left:0;top:783px;width:1080px;height:567px;padding:36px 63px 60px;display:flex;flex-direction:column;justify-content:center">
-  <div style="display:flex;align-items:center;gap:18px;margin-bottom:26px">
-    <span class="chip" style="margin:0">{e(D['series'])} {e(D['number'])}</span>
-    <span style="font-size:26px;color:var(--w70);letter-spacing:.06em">{e(D['source'])} · {e(D['section'])}</span></div>
-  <div class="gw" style="font-size:84px;line-height:1.2;margin-bottom:22px">{acc_in(D['headline'], D['expression'])}</div>
-  <div class="gw" style="font-size:48px;line-height:1.35;color:var(--w95);margin-bottom:30px">{acc_in(D['hook_ko'], D['hook_hl'])}</div>
-  <div style="display:flex;flex-wrap:wrap;gap:12px">{''.join(f'<span class="htag">{e(t)}</span>' for t in D['tags'])}</div>
-</div>
-"""
-    glow1 = None
-else:
-    c1 = f"""
-<div class="si" style="padding:150px 63px 110px;justify-content:space-between">
-  <div>
-    <div style="display:flex;align-items:center;gap:18px;margin-bottom:34px">
-      <span class="chip" style="margin:0">{e(D['series'])} {e(D['number'])}</span>
-      <span style="font-size:26px;color:var(--w70);letter-spacing:.06em">{e(D['source'])} · {e(D['section'])}</span></div>
-    <div class="gw" style="font-size:62px;line-height:1.3;color:var(--w70)">{acc_in(D['headline'], D['expression'])}</div>
+# ---------------- 01 COVER : 편집 매거진형 ----------------
+INF = D.get('inflected', D['expression'])
+HEAD_PX = 96 if len(D['headline']) <= 40 else 86 if len(D['headline']) <= 56 else 76 if len(D['headline']) <= 72 else 66
+EXP_PX  = 92 if len(D['expression']) <= 12 else 76 if len(D['expression']) <= 18 else 62
+head_html = e(D['headline']).replace(e(INF), f'<span class="mark">{e(INF)}</span>')
+c1 = f"""
+<div class="si" style="padding:140px 63px 150px;justify-content:center">
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding-bottom:20px">
+    <div class="lbl" style="color:var(--w60);margin-bottom:30px">{e(D['source'])} · {e(D['section'])}</div>
+    <div class="serif" style="font-size:{HEAD_PX}px;line-height:1.22;font-weight:700;letter-spacing:-.01em">{head_html}</div>
+    <div style="margin-top:30px;font-size:26px;color:var(--w60);letter-spacing:.04em">헤드라인 속 <b style="color:var(--w95)">{e(INF)}</b> — 원형은?</div>
   </div>
-  <div style="text-align:center">
-    <div style="font-size:150px;line-height:1;margin-bottom:10px">{D['emoji']}</div>
-    <div class="gw acc" style="font-size:{COVER_PX}px;line-height:1.02;letter-spacing:-.01em">{e(D['expression'])}</div>
-  </div>
-  <div>
-    <div class="gw" style="font-size:52px;line-height:1.35;color:var(--w95);margin-bottom:26px">{acc_in(D['hook_ko'], D['hook_hl'])}</div>
-    <div style="display:flex;flex-wrap:wrap;gap:12px">{''.join(f'<span class="htag">{e(t)}</span>' for t in D['tags'])}</div>
+  <div style="border-top:1px solid var(--w30);padding-top:34px">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
+      <span class="lbl acc">TODAY'S EXPRESSION</span>
+      <span style="font-size:26px;line-height:1">{D['emoji']}</span>
+    </div>
+    <div class="gw acc" style="font-size:{EXP_PX}px;line-height:1.1;letter-spacing:-.01em;margin-bottom:16px">{e(D['expression'])}</div>
+    <div class="gw" style="font-size:40px;line-height:1.4;color:var(--w95)">{acc_in(D['hook_ko'], D['hook_hl'])}</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-top:30px">
+      <span style="font-size:23px;color:var(--w60);letter-spacing:.06em">THE HEADLINE · {e(D['number'].strip('#'))}</span>
+      <span class="lbl acc" style="font-size:24px">SWIPE TO DECODE →</span>
+    </div>
   </div>
 </div>
 """
-    glow1 = (540, 620)
+glow1 = (240, 1080)
 
 # ---------------- 02 CONTEXT : 세로 3단 체인 ----------------
 steps = ""
